@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/student/Desktop/ReadingRoomDemo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/student/Desktop/ReadingRoomDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bd118b3ac2f65c9888674b0eeafdfe7c0fe9c218/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/student/Desktop/ReadingRoomDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2d59f3a2a985ad1eace6530152b044c7b9c82a89">
+        <dex dex="/Users/student/Desktop/ReadingRoomDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8693b8094f98a337cbd14987a43eacd8e3f0a234/classes.dex" />
+    </item>
+
+</items>

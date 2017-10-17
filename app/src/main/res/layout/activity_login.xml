@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.readingroomdemo.LoginActivity"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    android:weightSum="1"
+    android:background="@drawable/breaking_news"
+    android:backgroundTint="@color/dark_grey">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21"
+        android:text="Reading Room"
+        android:textSize="30dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="178dp"
+        android:layout_gravity="center"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/breaking_news" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.05"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:ems="10"
+            android:hint="Email "
+            android:inputType="textEmailAddress"
+            android:paddingBottom="20dp" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:id="@+id/btn_sign_in"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+
+           android:layout_weight="0.03"
+           android:background="@color/dark_grey"
+           android:text="sign in" />
+
+   </LinearLayout>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></ScrollView>
+
+
+</LinearLayout>

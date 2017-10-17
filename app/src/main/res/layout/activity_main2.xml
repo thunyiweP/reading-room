@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_red"
+    tools:context="com.example.student.readingroomdemo.Main2Activity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_list"
+        android:layout_width="372dp"
+        android:layout_height="502dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.229"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.523">
+
+        <ListView
+            android:id="@+id/lv_aricles"
+            android:layout_width="363dp"
+            android:layout_height="499dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/dark_red"
+            android:layout_marginEnd="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="120px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:background="@color/dark_grey"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.981"
+        app:layout_constraintTop_toTopOf="@+id/refresh_list"
+        android:id="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.493"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <EditText
+            android:id="@+id/txt_post"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.93"
+            android:ems="10"
+            android:hint="paste article link to post "
+            android:textColorHint="@color/grey"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/dark_grey"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_post"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/txt_post"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_bias="0.833"
+            app:srcCompat="@drawable/ic_send_white_24dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="370dp"
+        android:layout_height="15dp"
+        tools:layout_editor_absoluteY="6dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        android:max="100"
+        android:progress="5"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
